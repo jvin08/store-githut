@@ -1,15 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import heroBcg from '../assets/hero-table.jpg'
-import heroBcg2 from '../assets/hero-carpenter.jpg'
+// import heroBcg from '../assets/hero-table.jpg'
+// import heroBcg2 from '../assets/hero-carpenter.jpg'
+import heroBcg from '../assets/hero-lap-top.svg' 
+
 const Hero = () => {
   return (
     <Wrapper className='section-center'>
       <article className='content'>
         <h1>
-          design your <br />
-          comfort zone
+        Get Your Device <br />
+        at Gadgetopia!
         </h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at
@@ -22,8 +24,7 @@ const Hero = () => {
         </Link>
       </article>
       <article className='img-container'>
-        <img src={heroBcg} alt='nice table' className='main-img' />
-        <img src={heroBcg2} alt='person working' className='accent-img' />
+        <img src={heroBcg} alt='nice gadget' className='main-img' />
       </article>
     </Wrapper>
   )
@@ -47,14 +48,14 @@ const Wrapper = styled.section`
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
     grid-template-columns: 1fr 1fr;
-    gap: 8rem;
+    gap: 2rem;
     h1 {
       margin-bottom: 2rem;
     }
     p {
       font-size: 1.25rem;
     }
-    .hero-btn {
+    .hero-btn { 
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
     }
@@ -78,7 +79,7 @@ const Wrapper = styled.section`
       transform: translateX(-50%);
       border-radius: var(--radius);
     }
-    .img-container::before {
+    /* .img-container::before {
       content: '';
       position: absolute;
       width: 10%;
@@ -87,7 +88,7 @@ const Wrapper = styled.section`
       bottom: 0%;
       left: -8%;
       border-radius: var(--radius);
-    }
+    } */
   }
 `
 

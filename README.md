@@ -28,6 +28,10 @@
 />
 <title>Gadget Junkie</title>
 ```
+#### products url
+
+- [all products] https://course-api.com/react-store-products
+- [single product] https://course-api.com/react-store-single-product?id=
 
 index.css
 
@@ -238,9 +242,9 @@ exports.handler = async function () {
   try {
     const response = await airtable.list({ maxRecords: 200 })
 
-    console.log('#######')
-    console.log(response)
-    console.log('#######')
+    console.log('#######2')
+    console.log(response.records[0].fields.name)
+    console.log('#######2')
 
     return {
       statusCode: 200,
