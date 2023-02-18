@@ -7,9 +7,10 @@ const Contact = () => {
         <h3>Join our newsletter and get 20% off</h3>
         <div className='content'>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            sint unde quaerat ratione soluta veniam provident adipisci cumque
-            eveniet tempore?
+            Overall, joining a newsletter and taking advantage of a discount
+            offer can be a good way to save money and stay up to date with a 
+            company's offerings, but it's important to be mindful of the terms 
+            and conditions to make sure the offer is a good fit for your needs.
           </p>
           <form className='contact-form'>
             <input
